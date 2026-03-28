@@ -59,12 +59,14 @@ router.get('/', (req, res) => {
   if (featured) { where += ' AND p.is_featured = 1'; }
 
   const allRows = db.prepare(`
-    SELECT p.*, i.quantity as stock, c.name as category_name
+    SELECT p.id, p.sku, p.name, p.slug, p.category_slug, p.unit, p.price,
+           p.image_url, p.is_active, p.is_featured, p.group_key, p.size_label,
+           i.quantity as stock, c.name as category_name
     FROM products p
     LEFT JOIN inventory i ON i.product_id = p.id
     LEFT JOIN categories c ON c.slug = p.category_slug
     ${where}
-    ORDER BY p.is_featured DESC, p.group_key ASC, p.price ASC
+    ORDER BY p.is_featured DESC, p.id ASC
   `).all(...params);
 
   const groups = groupProducts(allRows);
@@ -73,6 +75,7 @@ router.get('/', (req, res) => {
   const lim = parseInt(limit);
   const paged = groups.slice((pg - 1) * lim, pg * lim);
 
+  res.set('Cache-Control', 'public, max-age=60');
   res.json({ products: paged, total, page: pg, pages: Math.ceil(total / lim) });
 });
 

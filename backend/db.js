@@ -82,6 +82,17 @@ db.exec(`
   );
 `);
 
+// ── Indexes for query performance ────────────────────────────────────────────
+db.exec(`
+  CREATE INDEX IF NOT EXISTS idx_products_active        ON products(is_active);
+  CREATE INDEX IF NOT EXISTS idx_products_active_cat    ON products(is_active, category_slug);
+  CREATE INDEX IF NOT EXISTS idx_products_featured      ON products(is_featured);
+  CREATE INDEX IF NOT EXISTS idx_products_group_key     ON products(group_key);
+  CREATE INDEX IF NOT EXISTS idx_inventory_product      ON inventory(product_id);
+  CREATE INDEX IF NOT EXISTS idx_cart_user              ON cart_items(user_id);
+  CREATE INDEX IF NOT EXISTS idx_orders_user            ON orders(user_id);
+`);
+
 // ── Safe migrations (add columns to existing DBs if missing) ─────────────────
 const productCols = db.prepare("PRAGMA table_info(products)").all().map(c => c.name);
 if (!productCols.includes('group_key'))   db.prepare("ALTER TABLE products ADD COLUMN group_key TEXT").run();

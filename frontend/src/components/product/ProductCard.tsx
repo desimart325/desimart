@@ -36,6 +36,7 @@ export default function ProductCard({ product }: { product: Product }) {
   const navigate = useNavigate();
   const [imgFailed, setImgFailed] = useState(false);
   const [brandLogoFailed, setBrandLogoFailed] = useState(false);
+  const [adding, setAdding] = useState(false);
 
   const emoji = CATEGORY_EMOJI[product.category_slug] || '🛒';
   const brandLogo = getBrandLogo(product.name);
@@ -53,7 +54,14 @@ export default function ProductCard({ product }: { product: Product }) {
   const handleAddToCart = async (e: React.MouseEvent) => {
     e.preventDefault();
     if (!user) { navigate('/login'); return; }
-    await addItem(product.id);
+    setAdding(true);
+    try {
+      await addItem(product.id);
+    } catch {
+      // silently ignore — cart drawer will show current state
+    } finally {
+      setAdding(false);
+    }
   };
 
   const displayName = product.display_name || product.name;
@@ -110,10 +118,10 @@ export default function ProductCard({ product }: { product: Product }) {
           <span className="text-[#f5c518] font-bold text-sm leading-none">{priceDisplay}</span>
           <button
             onClick={handleAddToCart}
-            disabled={!inStock}
+            disabled={!inStock || adding}
             className="bg-[#f5c518] text-black p-1.5 rounded-lg hover:bg-[#ffd740] transition-colors disabled:opacity-30 disabled:cursor-not-allowed shrink-0"
           >
-            <ShoppingCart size={14} />
+            {adding ? <span className="block w-3.5 h-3.5 border-2 border-black/30 border-t-black rounded-full animate-spin" /> : <ShoppingCart size={14} />}
           </button>
         </div>
       </div>

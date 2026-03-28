@@ -82,9 +82,14 @@ export default function ProductDetail() {
   const handleAdd = async () => {
     if (!user) { navigate('/login'); return; }
     setAdding(true);
-    const targetId = selectedVariant?.id ?? product.id;
-    await addItem(targetId, qty);
-    setAdding(false);
+    try {
+      const targetId = selectedVariant?.id ?? product.id;
+      await addItem(targetId, qty);
+    } catch {
+      // silently ignore
+    } finally {
+      setAdding(false);
+    }
   };
 
   return (
