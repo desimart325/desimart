@@ -1,0 +1,38 @@
+# Fly.io deployment config for Desi Mart backend
+# Deploy with: fly launch (first time) or fly deploy (updates)
+
+app = "desimart-backend"
+primary_region = "ord"   # Chicago — closest to Farmington Hills, MI
+
+[build]
+
+[env]
+  NODE_ENV = "production"
+  PORT     = "3001"
+
+# Secrets (set these with: fly secrets set KEY=value)
+# fly secrets set STRIPE_SECRET_KEY=sk_live_...
+# fly secrets set STRIPE_PUBLISHABLE_KEY=pk_live_...
+# fly secrets set STRIPE_WEBHOOK_SECRET=whsec_...
+# fly secrets set PAYPAL_CLIENT_ID=...
+# fly secrets set PAYPAL_CLIENT_SECRET=...
+# fly secrets set ZELLE_CONTACT=desimart325@gmail.com
+# fly secrets set JWT_SECRET=your-strong-secret
+# fly secrets set FRONTEND_URL=https://yourdomain.com
+
+[http_service]
+  internal_port       = 3001
+  force_https         = true
+  auto_stop_machines  = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [http_service.concurrency]
+    type       = "connections"
+    hard_limit = 25
+    soft_limit = 20
+
+# Persistent volume for SQLite database
+[mounts]
+  source      = "desimart_data"
+  destination = "/data"

@@ -1,0 +1,1492 @@
+[
+  {
+    "sku": "0000000000001",
+    "name": "Green Beans",
+    "slug": "green-beans",
+    "price": 3.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 6
+  },
+  {
+    "sku": "0000000000009",
+    "name": "Idaho Potatoes",
+    "slug": "idaho-potatoes",
+    "price": 0.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 2
+  },
+  {
+    "sku": "0000000000013",
+    "name": "Carrots",
+    "slug": "carrots",
+    "price": 0.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 1
+  },
+  {
+    "sku": "0000000000060",
+    "name": "Lemon small (each)",
+    "slug": "lemon-small-each",
+    "price": 0.4,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000000065",
+    "name": "Bottle Gourd",
+    "slug": "bottle-gourd",
+    "price": 2.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000000075",
+    "name": "Lemon big (each)",
+    "slug": "lemon-big-each",
+    "price": 0.6,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 66
+  },
+  {
+    "sku": "0000000000205",
+    "name": "Sinqua - Ridge gourd (Turia)",
+    "slug": "sinqua-ridge-gourd-turia",
+    "price": 2.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 8
+  },
+  {
+    "sku": "0000000000206",
+    "name": "Yucca Root",
+    "slug": "yucca-root",
+    "price": 2.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 1
+  },
+  {
+    "sku": "0000000000207",
+    "name": "Eddos",
+    "slug": "eddos",
+    "price": 2.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000000208",
+    "name": "Squash Donqua",
+    "slug": "squash-donqua",
+    "price": 3.37,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000000209",
+    "name": "Squash yellow",
+    "slug": "squash-yellow",
+    "price": 0.9,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000000210",
+    "name": "White / Daikon Radish",
+    "slug": "white-daikon-radish",
+    "price": 1.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 3
+  },
+  {
+    "sku": "0000000000211",
+    "name": "Yukon gold potato small",
+    "slug": "yukon-gold-potato-small",
+    "price": 1.29,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 3
+  },
+  {
+    "sku": "0000000000390",
+    "name": "Irani Samosa",
+    "slug": "irani-samosa",
+    "price": 0.75,
+    "category": "hot-foods",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000000501",
+    "name": "White Pumpkin",
+    "slug": "white-pumpkin",
+    "price": 2.69,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 6
+  },
+  {
+    "sku": "0000000000502",
+    "name": "Plantain",
+    "slug": "plantain",
+    "price": 2.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 3
+  },
+  {
+    "sku": "0000000000503",
+    "name": "Masala Vada",
+    "slug": "masala-vada",
+    "price": 1,
+    "category": "hot-foods",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000000576",
+    "name": "Doseki",
+    "slug": "doseki",
+    "price": 2.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 25
+  },
+  {
+    "sku": "0000000000794",
+    "name": "Avocado",
+    "slug": "avocado",
+    "price": 1.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 15
+  },
+  {
+    "sku": "0000000001025",
+    "name": "Banana Flower",
+    "slug": "banana-flower",
+    "price": 1.5,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 31
+  },
+  {
+    "sku": "0000000001027",
+    "name": "Basil (per lb)",
+    "slug": "basil-per-lb",
+    "price": 1.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 1
+  },
+  {
+    "sku": "0000000001030",
+    "name": "Bean Sprout",
+    "slug": "bean-sprout",
+    "price": 1.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 6
+  },
+  {
+    "sku": "0000000001031",
+    "name": "Beet Root (per lb)",
+    "slug": "beet-root-per-lb",
+    "price": 4.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 7
+  },
+  {
+    "sku": "0000000001055",
+    "name": "Cabbage (each)",
+    "slug": "cabbage-each",
+    "price": 1.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000001061",
+    "name": "Carrot 1lb bag",
+    "slug": "carrot-1lb-bag",
+    "price": 1.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 10
+  },
+  {
+    "sku": "0000000001067",
+    "name": "Cauliflower",
+    "slug": "cauliflower",
+    "price": 3.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 4
+  },
+  {
+    "sku": "0000000001073",
+    "name": "Chayote (per lb)",
+    "slug": "chayote-per-lb",
+    "price": 2.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000001089",
+    "name": "Cilantro (bunch)",
+    "slug": "cilantro-bunch",
+    "price": 0.89,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000001092",
+    "name": "Coconut (each)",
+    "slug": "coconut-each",
+    "price": 3.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000001104",
+    "name": "Fresh Corn (pack)",
+    "slug": "fresh-corn-pack",
+    "price": 1.59,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000001114",
+    "name": "Curry Leaves (bunch)",
+    "slug": "curry-leaves-bunch",
+    "price": 1.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000001142",
+    "name": "Ginger Root (small)",
+    "slug": "ginger-root-small",
+    "price": 3.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000001147",
+    "name": "Garlic",
+    "slug": "garlic",
+    "price": 4.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 33
+  },
+  {
+    "sku": "0000000001148",
+    "name": "Ginger Root (big)",
+    "slug": "ginger-root-big",
+    "price": 2.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 6
+  },
+  {
+    "sku": "0000000001159",
+    "name": "Green Mango",
+    "slug": "green-mango",
+    "price": 3.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 1
+  },
+  {
+    "sku": "0000000001162",
+    "name": "Green Pepper (each)",
+    "slug": "green-pepper-each",
+    "price": 0.5,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 21
+  },
+  {
+    "sku": "0000000001178",
+    "name": "Karela / Indian Bittermelon",
+    "slug": "karela-indian-bittermelon",
+    "price": 3.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 7
+  },
+  {
+    "sku": "0000000001180",
+    "name": "Indian Eggplant FL",
+    "slug": "indian-eggplant-fl",
+    "price": 2.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 2
+  },
+  {
+    "sku": "0000000001182",
+    "name": "Jackfruit",
+    "slug": "jackfruit",
+    "price": 1.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000001205",
+    "name": "Lime (each)",
+    "slug": "lime-each",
+    "price": 0.4,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 7
+  },
+  {
+    "sku": "0000000001211",
+    "name": "Green Chilli Long /lb",
+    "slug": "green-chilli-long-lb",
+    "price": 4.79,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 16
+  },
+  {
+    "sku": "0000000001217",
+    "name": "Mango leaves /lb",
+    "slug": "mango-leaves-lb",
+    "price": 1.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 10
+  },
+  {
+    "sku": "0000000001224",
+    "name": "Mint (bunch)",
+    "slug": "mint-bunch",
+    "price": 1.29,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 13
+  },
+  {
+    "sku": "0000000001252",
+    "name": "Okra (per lb)",
+    "slug": "okra-per-lb",
+    "price": 4.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 11
+  },
+  {
+    "sku": "0000000001298",
+    "name": "Plantain (per lb)",
+    "slug": "plantain-per-lb",
+    "price": 1.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 45
+  },
+  {
+    "sku": "0000000001306",
+    "name": "Sweet Potato (per lb)",
+    "slug": "sweet-potato-per-lb",
+    "price": 0.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 2
+  },
+  {
+    "sku": "0000000001333",
+    "name": "Red Onion (per lb)",
+    "slug": "red-onion-per-lb",
+    "price": 1.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000001335",
+    "name": "Red Onion bag",
+    "slug": "red-onion-bag",
+    "price": 3.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 12
+  },
+  {
+    "sku": "0000000001336",
+    "name": "Roma Tomatoes (per lb)",
+    "slug": "roma-tomatoes-per-lb",
+    "price": 1.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 18
+  },
+  {
+    "sku": "0000000001339",
+    "name": "Pearl Red Onion bag",
+    "slug": "pearl-red-onion-bag",
+    "price": 3.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000001370",
+    "name": "Snake Gourd (per lb)",
+    "slug": "snake-gourd-per-lb",
+    "price": 2.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 27
+  },
+  {
+    "sku": "0000000001400",
+    "name": "Green Chilli small (per lb)",
+    "slug": "green-chilli-small-per-lb",
+    "price": 4.79,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 7
+  },
+  {
+    "sku": "0000000001405",
+    "name": "Tindora (per lb)",
+    "slug": "tindora-per-lb",
+    "price": 4.29,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000001427",
+    "name": "White Onion",
+    "slug": "white-onion",
+    "price": 2.75,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 33
+  },
+  {
+    "sku": "0000000001428",
+    "name": "Yelllow Onion 3lb bag",
+    "slug": "yelllow-onion-3lb-bag",
+    "price": 2.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 2
+  },
+  {
+    "sku": "0000000001430",
+    "name": "Yam",
+    "slug": "yam",
+    "price": 1.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 8
+  },
+  {
+    "sku": "0000000001575",
+    "name": "Gongura Leaves (per lb)",
+    "slug": "gongura-leaves-per-lb",
+    "price": 3.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 8
+  },
+  {
+    "sku": "0000000001631",
+    "name": "Turmeric yellow (per lb)",
+    "slug": "turmeric-yellow-per-lb",
+    "price": 5.99,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 11
+  },
+  {
+    "sku": "0000000001691",
+    "name": "Baby Banana (per lb)",
+    "slug": "baby-banana-per-lb",
+    "price": 2.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 13
+  },
+  {
+    "sku": "0000000002003",
+    "name": "Methi Leaves",
+    "slug": "methi-leaves",
+    "price": 2.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000002100",
+    "name": "Nizam Betelnut",
+    "slug": "nizam-betelnut",
+    "price": 0.2,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 250
+  },
+  {
+    "sku": "0000000004008",
+    "name": "Papaya",
+    "slug": "papaya",
+    "price": 3.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 31
+  },
+  {
+    "sku": "0000000004598",
+    "name": "Pav Buns 8ct",
+    "slug": "pav-buns-8ct",
+    "price": 4.49,
+    "category": "snacks-namkeen",
+    "unit": null,
+    "description": null,
+    "quantity": 2
+  },
+  {
+    "sku": "0000000006546",
+    "name": "Burro Banana",
+    "slug": "burro-banana",
+    "price": 2.29,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000006605",
+    "name": "Red Thottakura",
+    "slug": "red-thottakura",
+    "price": 2.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 1
+  },
+  {
+    "sku": "0000000006748",
+    "name": "Dulhan Mehendi Cone",
+    "slug": "dulhan-mehendi-cone",
+    "price": 1.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 10
+  },
+  {
+    "sku": "0000000008976",
+    "name": "Pea Pod",
+    "slug": "pea-pod",
+    "price": 5.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 3
+  },
+  {
+    "sku": "0000000009700",
+    "name": "Thai Guava",
+    "slug": "thai-guava",
+    "price": 4.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000012001",
+    "name": "Tomatoes",
+    "slug": "tomatoes",
+    "price": 1.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000020336",
+    "name": "Guvar Bean",
+    "slug": "guvar-bean",
+    "price": 3.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 20
+  },
+  {
+    "sku": "0000000023007",
+    "name": "DrumStick Leaves",
+    "slug": "drumstick-leaves",
+    "price": 8.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 9
+  },
+  {
+    "sku": "0000000035002",
+    "name": "Pumpkin / Calabaza",
+    "slug": "pumpkin-calabaza",
+    "price": 1.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 19
+  },
+  {
+    "sku": "0000000057300",
+    "name": "Butternut Squash",
+    "slug": "butternut-squash",
+    "price": 1.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 4
+  },
+  {
+    "sku": "0000000869005",
+    "name": "Broccoli",
+    "slug": "broccoli",
+    "price": 2.15,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 7
+  },
+  {
+    "sku": "0000000869111",
+    "name": "Cucumber Super select",
+    "slug": "cucumber-super-select",
+    "price": 0.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 9
+  },
+  {
+    "sku": "0000000897001",
+    "name": "Fresh Rotis",
+    "slug": "fresh-rotis",
+    "price": 4.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000900671",
+    "name": "Samosa (big)",
+    "slug": "samosa-big",
+    "price": 1.49,
+    "category": "hot-foods",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000000987339",
+    "name": "Kinder Joy",
+    "slug": "kinder-joy",
+    "price": 2.99,
+    "category": "sweets-mithai",
+    "unit": null,
+    "description": null,
+    "quantity": 97
+  },
+  {
+    "sku": "0000003424005",
+    "name": "Hershey Milk Chocolate",
+    "slug": "hershey-milk-chocolate",
+    "price": 1.29,
+    "category": "sweets-mithai",
+    "unit": null,
+    "description": null,
+    "quantity": 2
+  },
+  {
+    "sku": "0000050201013",
+    "name": "Cadbury flake 32g",
+    "slug": "cadbury-flake-32g",
+    "price": 1.79,
+    "category": "sweets-mithai",
+    "unit": null,
+    "description": null,
+    "quantity": 30
+  },
+  {
+    "sku": "0000050312351",
+    "name": "Cadbury Flake 32gm",
+    "slug": "cadbury-flake-32gm",
+    "price": 1.79,
+    "category": "sweets-mithai",
+    "unit": null,
+    "description": null,
+    "quantity": 1
+  },
+  {
+    "sku": "0000080768258",
+    "name": "Kinder Joy (girl)",
+    "slug": "kinder-joy-girl",
+    "price": 2.49,
+    "category": "sweets-mithai",
+    "unit": null,
+    "description": null,
+    "quantity": 47
+  },
+  {
+    "sku": "0000080974482",
+    "name": "Kinder Joy (boy)",
+    "slug": "kinder-joy-boy",
+    "price": 2.49,
+    "category": "sweets-mithai",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0000089003978",
+    "name": "Iodex",
+    "slug": "iodex",
+    "price": 3.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 12
+  },
+  {
+    "sku": "0009800820023",
+    "name": "Nutella B-Ready",
+    "slug": "nutella-bready",
+    "price": 1.99,
+    "category": "sweets-mithai",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0011156000141",
+    "name": "Tetley Ginger 72bags",
+    "slug": "tetley-ginger-72bags",
+    "price": 5.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 8
+  },
+  {
+    "sku": "0011156000158",
+    "name": "Tetley Masala 72ct Tea Bags",
+    "slug": "tetley-masala-72ct-tea-bags",
+    "price": 4.99,
+    "category": "beverages",
+    "unit": null,
+    "description": null,
+    "quantity": 5
+  },
+  {
+    "sku": "0011156000202",
+    "name": "Tetley Loose leaf blk tea 450g",
+    "slug": "tetley-loose-leaf-blk-tea-450g",
+    "price": 4.59,
+    "category": "beverages",
+    "unit": null,
+    "description": null,
+    "quantity": 10
+  },
+  {
+    "sku": "0011156000233",
+    "name": "Tata Elaichi Chai 50 bags",
+    "slug": "tata-elaichi-chai-50-bags",
+    "price": 3.89,
+    "category": "beverages",
+    "unit": null,
+    "description": null,
+    "quantity": 10
+  },
+  {
+    "sku": "0011156000240",
+    "name": "Tata ginger chai 50 bags",
+    "slug": "tata-ginger-chai-50-bags",
+    "price": 3.89,
+    "category": "beverages",
+    "unit": null,
+    "description": null,
+    "quantity": 10
+  },
+  {
+    "sku": "0011156000257",
+    "name": "Tata Masala Chai 50 bags",
+    "slug": "tata-masala-chai-50-bags",
+    "price": 3.69,
+    "category": "beverages",
+    "unit": null,
+    "description": null,
+    "quantity": 9
+  },
+  {
+    "sku": "0011156000301",
+    "name": "Tetley Green Tea Honey 72ct",
+    "slug": "tetley-green-tea-honey-72ct",
+    "price": 5.49,
+    "category": "beverages",
+    "unit": null,
+    "description": null,
+    "quantity": 11
+  },
+  {
+    "sku": "0011156059880",
+    "name": "Tata Tea Gold blk 450g",
+    "slug": "tata-tea-gold-blk-450g",
+    "price": 5.79,
+    "category": "beverages",
+    "unit": null,
+    "description": null,
+    "quantity": 19
+  },
+  {
+    "sku": "0011156059903",
+    "name": "Tata Tea Premium blk 450g",
+    "slug": "tata-tea-premium-blk-450g",
+    "price": 5.79,
+    "category": "beverages",
+    "unit": null,
+    "description": null,
+    "quantity": 23
+  },
+  {
+    "sku": "0011156059910",
+    "name": "Tata Tea Premium blk 900g",
+    "slug": "tata-tea-premium-blk-900g",
+    "price": 11.49,
+    "category": "beverages",
+    "unit": null,
+    "description": null,
+    "quantity": 10
+  },
+  {
+    "sku": "0011433021289",
+    "name": "Bansi Papadi 14.1oz",
+    "slug": "bansi-papadi-141oz",
+    "price": 4.49,
+    "category": "snacks-namkeen",
+    "unit": null,
+    "description": null,
+    "quantity": 10
+  },
+  {
+    "sku": "0011433021319",
+    "name": "Deep Bhel Mix 12oz",
+    "slug": "deep-bhel-mix-12oz",
+    "price": 4.49,
+    "category": "snacks-namkeen",
+    "unit": null,
+    "description": null,
+    "quantity": 4
+  },
+  {
+    "sku": "0011433021357",
+    "name": "Deep Sev Regular 12 oz",
+    "slug": "deep-sev-regular-12-oz",
+    "price": 4.49,
+    "category": "snacks-namkeen",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0011433061414",
+    "name": "Mirch Masala Boondi 340gm",
+    "slug": "mirch-masala-boondi-340gm",
+    "price": 5.49,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 14
+  },
+  {
+    "sku": "0011433071123",
+    "name": "Deep Turmeric pwd 14oz",
+    "slug": "deep-turmeric-pwd-14oz",
+    "price": 3.99,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 18
+  },
+  {
+    "sku": "0011433071154",
+    "name": "Deep Cumin Seeds 14oz",
+    "slug": "deep-cumin-seeds-14oz",
+    "price": 5.49,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 24
+  },
+  {
+    "sku": "0011433071161",
+    "name": "Deep Cumin Pwd 400g",
+    "slug": "deep-cumin-pwd-400g",
+    "price": 5.49,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 18
+  },
+  {
+    "sku": "0011433071192",
+    "name": "Deep Fenugreek Seeds 400g",
+    "slug": "deep-fenugreek-seeds-400g",
+    "price": 2.99,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 13
+  },
+  {
+    "sku": "0011433073127",
+    "name": "Deep Turmeric pwd 7oz",
+    "slug": "deep-turmeric-pwd-7oz",
+    "price": 2.69,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 17
+  },
+  {
+    "sku": "0011433073158",
+    "name": "Deep Cumin seeds 200g",
+    "slug": "deep-cumin-seeds-200g",
+    "price": 2.99,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0011433073196",
+    "name": "Deep Fenugreek Seeds 400g",
+    "slug": "deep-fenugreek-seeds-400g-3196",
+    "price": 1.79,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 20
+  },
+  {
+    "sku": "0011433110730",
+    "name": "Bansi Roasted Channa 200gm",
+    "slug": "bansi-roasted-channa-200gm",
+    "price": 1.99,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 15
+  },
+  {
+    "sku": "0011433111744",
+    "name": "Deep Red Chili X Hot14oz",
+    "slug": "deep-red-chili-x-hot14oz",
+    "price": 3.99,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 15
+  },
+  {
+    "sku": "0011433112673",
+    "name": "Deep Black cardamom 3.5oz",
+    "slug": "deep-black-cardamom-35oz",
+    "price": 6.74,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 14
+  },
+  {
+    "sku": "0011433112987",
+    "name": "Deep Mango Drink 250ml",
+    "slug": "deep-mango-drink-250ml",
+    "price": 1.99,
+    "category": "beverages",
+    "unit": null,
+    "description": null,
+    "quantity": 17
+  },
+  {
+    "sku": "0011433113076",
+    "name": "Deep Toor Dal 2lb",
+    "slug": "deep-toor-dal-2lb",
+    "price": 3.84,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 18
+  },
+  {
+    "sku": "0011433113090",
+    "name": "Deep Toor Dal 4lb",
+    "slug": "deep-toor-dal-4lb",
+    "price": 7.69,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 3
+  },
+  {
+    "sku": "0011433113106",
+    "name": "Deep Toor Dal Oily 4lb",
+    "slug": "deep-toor-dal-oily-4lb",
+    "price": 7.49,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 8
+  },
+  {
+    "sku": "0011433113250",
+    "name": "Deep Channa Dal Split 2 lbs",
+    "slug": "deep-channa-dal-split-2-lbs",
+    "price": 3.49,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 17
+  },
+  {
+    "sku": "0011433113267",
+    "name": "Deep Masoor Dal 2lb",
+    "slug": "deep-masoor-dal-2lb",
+    "price": 3.49,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 10
+  },
+  {
+    "sku": "0011433113274",
+    "name": "Deep Urad Dal 2lb",
+    "slug": "deep-urad-dal-2lb",
+    "price": 3.99,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 6
+  },
+  {
+    "sku": "0011433113281",
+    "name": "Deep Moong Dal Split 2 lb",
+    "slug": "deep-moong-dal-split-2-lb",
+    "price": 3.99,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 9
+  },
+  {
+    "sku": "0011433113311",
+    "name": "Deep Moong Dal Whole 2lb",
+    "slug": "deep-moong-dal-whole-2lb",
+    "price": 3.85,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 9
+  },
+  {
+    "sku": "0011433113373",
+    "name": "Deep Chana Dal Split 4 lb",
+    "slug": "deep-chana-dal-split-4-lb",
+    "price": 5.49,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 1
+  },
+  {
+    "sku": "0011433113397",
+    "name": "Deep Urad Dal 4lb",
+    "slug": "deep-urad-dal-4lb",
+    "price": 6.99,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 4
+  },
+  {
+    "sku": "0011433113403",
+    "name": "Deep Moong Dal Split 4lb",
+    "slug": "deep-moong-dal-split-4lb",
+    "price": 6.99,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0011433113434",
+    "name": "Deep Moong Dal whole 4lb",
+    "slug": "deep-moong-dal-whole-4lb",
+    "price": 7.49,
+    "category": "lentils-dal",
+    "unit": null,
+    "description": null,
+    "quantity": 4
+  },
+  {
+    "sku": "0011433113700",
+    "name": "Deep Besan Flour 2 lb",
+    "slug": "deep-besan-flour-2-lb",
+    "price": 4.49,
+    "category": "flour-atta",
+    "unit": null,
+    "description": null,
+    "quantity": 8
+  },
+  {
+    "sku": "0011433113731",
+    "name": "Deep Juwar Flour 2Lb",
+    "slug": "deep-juwar-flour-2lb",
+    "price": 3.99,
+    "category": "flour-atta",
+    "unit": null,
+    "description": null,
+    "quantity": 11
+  },
+  {
+    "sku": "0011433113755",
+    "name": "Deep Bajri Flour 2lb",
+    "slug": "deep-bajri-flour-2lb",
+    "price": 3.49,
+    "category": "flour-atta",
+    "unit": null,
+    "description": null,
+    "quantity": 16
+  },
+  {
+    "sku": "0011433113779",
+    "name": "Deep Ladu Besan 2lb",
+    "slug": "deep-ladu-besan-2lb",
+    "price": 4.49,
+    "category": "flour-atta",
+    "unit": null,
+    "description": null,
+    "quantity": 18
+  },
+  {
+    "sku": "0011433114462",
+    "name": "Deep Whl Garam Masla7oz",
+    "slug": "deep-whl-garam-masla7oz",
+    "price": 4.49,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 15
+  },
+  {
+    "sku": "0011433114684",
+    "name": "Deep Cardamom pwd 100g",
+    "slug": "deep-cardamom-pwd-100g",
+    "price": 7.71,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 16
+  },
+  {
+    "sku": "0011433114752",
+    "name": "Deep Red Chili Pwd 28oz",
+    "slug": "deep-red-chili-pwd-28oz",
+    "price": 8.49,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 9
+  },
+  {
+    "sku": "0011433115339",
+    "name": "Deep Baby Okra",
+    "slug": "deep-baby-okra",
+    "price": 2.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 19
+  },
+  {
+    "sku": "0011433115384",
+    "name": "Deep patra",
+    "slug": "deep-patra",
+    "price": 3.79,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 1
+  },
+  {
+    "sku": "0011433115575",
+    "name": "Deep Ragi Flour 2lb",
+    "slug": "deep-ragi-flour-2lb",
+    "price": 3.99,
+    "category": "flour-atta",
+    "unit": null,
+    "description": null,
+    "quantity": 17
+  },
+  {
+    "sku": "0011433115599",
+    "name": "Bansi Ponni Parboiled Rice 20 LB",
+    "slug": "bansi-ponni-parboiled-rice-20-lb",
+    "price": 19.99,
+    "category": "rice-grains",
+    "unit": null,
+    "description": null,
+    "quantity": 1
+  },
+  {
+    "sku": "0011433115636",
+    "name": "Deep Idli Rava Flr 2lb",
+    "slug": "deep-idli-rava-flr-2lb",
+    "price": 3.49,
+    "category": "rice-grains",
+    "unit": null,
+    "description": null,
+    "quantity": 16
+  },
+  {
+    "sku": "0011433115681",
+    "name": "Bansi Poha Thin 2lb",
+    "slug": "bansi-poha-thin-2lb",
+    "price": 3.49,
+    "category": "rice-grains",
+    "unit": null,
+    "description": null,
+    "quantity": 15
+  },
+  {
+    "sku": "0011433115735",
+    "name": "MM Madras Mix12oz",
+    "slug": "mm-madras-mix12oz",
+    "price": 3.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0011433116022",
+    "name": "Deep Red Chilli Whl 14oz",
+    "slug": "deep-red-chilli-whl-14oz",
+    "price": 5.49,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 10
+  },
+  {
+    "sku": "0011433117265",
+    "name": "Deep Gulab Jamun Mix 100g",
+    "slug": "deep-gulab-jamun-mix-100g",
+    "price": 1.99,
+    "category": "sweets-mithai",
+    "unit": null,
+    "description": null,
+    "quantity": 28
+  },
+  {
+    "sku": "0011433117340",
+    "name": "Deep Ginger Garlic Paste 723g",
+    "slug": "deep-ginger-garlic-paste-723g",
+    "price": 5.99,
+    "category": "pickles-chutneys",
+    "unit": null,
+    "description": null,
+    "quantity": 10
+  },
+  {
+    "sku": "0011433117357",
+    "name": "Deep Ginger garlic paste 283g",
+    "slug": "deep-ginger-garlic-paste-283g",
+    "price": 3.99,
+    "category": "pickles-chutneys",
+    "unit": null,
+    "description": null,
+    "quantity": 7
+  },
+  {
+    "sku": "0011433117951",
+    "name": "MM Plain Paratha 14.1oz",
+    "slug": "mm-plain-paratha-141oz",
+    "price": 3.49,
+    "category": "frozen-foods",
+    "unit": null,
+    "description": null,
+    "quantity": 17
+  },
+  {
+    "sku": "0011433119542",
+    "name": "Deep Panipuri 3.5 Oz",
+    "slug": "deep-panipuri-35-oz",
+    "price": 4.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 9
+  },
+  {
+    "sku": "0011433119757",
+    "name": "Deep Yogurt Whl milk 5lb",
+    "slug": "deep-yogurt-whl-milk-5lb",
+    "price": 7.69,
+    "category": "frozen-foods",
+    "unit": null,
+    "description": null,
+    "quantity": 0
+  },
+  {
+    "sku": "0011433120036",
+    "name": "Bansi Mustard Oil 500ml",
+    "slug": "bansi-mustard-oil-500ml",
+    "price": 4.49,
+    "category": "oils-ghee",
+    "unit": null,
+    "description": null,
+    "quantity": 20
+  },
+  {
+    "sku": "0011433120043",
+    "name": "Bansi Mustard Oil 1L",
+    "slug": "bansi-mustard-oil-1l",
+    "price": 6.49,
+    "category": "oils-ghee",
+    "unit": null,
+    "description": null,
+    "quantity": 6
+  },
+  {
+    "sku": "0011433133005",
+    "name": "Deep Sesame Oil 500ml",
+    "slug": "deep-sesame-oil-500ml",
+    "price": 5.99,
+    "category": "oils-ghee",
+    "unit": null,
+    "description": null,
+    "quantity": 22
+  },
+  {
+    "sku": "0011433133074",
+    "name": "Deep cashew Whole 7 oz",
+    "slug": "deep-cashew-whole-7-oz",
+    "price": 4.49,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 40
+  },
+  {
+    "sku": "0011433133081",
+    "name": "Deep Cashew Whole 14oz",
+    "slug": "deep-cashew-whole-14oz",
+    "price": 7.99,
+    "category": "fresh-produce",
+    "unit": null,
+    "description": null,
+    "quantity": 20
+  },
+  {
+    "sku": "0011433133210",
+    "name": "Deep Green cardamom 200g",
+    "slug": "deep-green-cardamom-200g",
+    "price": 15.99,
+    "category": "spices-masalas",
+    "unit": null,
+    "description": null,
+    "quantity": 19
+  }
+]

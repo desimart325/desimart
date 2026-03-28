@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: desimart-api
+    runtime: node
+    region: ohio          # closest free region to Farmington Hills, MI
+    plan: free
+    rootDir: .
+    buildCommand: npm install
+    startCommand: node index.js
+
+    # Persistent disk keeps SQLite data across deploys (requires Render paid plan)
+    # Uncomment when upgrading from free tier:
+    # disk:
+    #   name: desimart-data
+    #   mountPath: /data
+    #   sizeGB: 1
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      # Set these in the Render dashboard (never commit real values):
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_PUBLISHABLE_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: ZELLE_CONTACT
+        value: desimart325@gmail.com
+      - key: JWT_SECRET
+        sync: false
+      - key: FRONTEND_URL
+        sync: false   # set to your Netlify URL e.g. https://desimart.netlify.app
