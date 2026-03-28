@@ -8,7 +8,15 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+
+  const [showGuest, setShowGuest] = useState(false);
+  const [guestName, setGuestName] = useState('');
+  const [guestPhone, setGuestPhone] = useState('');
+  const [guestError, setGuestError] = useState('');
+  const [guestLoading, setGuestLoading] = useState(false);
+
   const login = useAuthStore((s) => s.login);
+  const loginAsGuest = useAuthStore((s) => s.loginAsGuest);
   const fetchCart = useCartStore((s) => s.fetchCart);
   const navigate = useNavigate();
 
@@ -22,6 +30,18 @@ export default function Login() {
     } catch (err: any) {
       setError(err.response?.data?.error || 'Login failed');
     } finally { setLoading(false); }
+  };
+
+  const handleGuest = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!guestName.trim()) { setGuestError('Please enter your name'); return; }
+    setGuestError(''); setGuestLoading(true);
+    try {
+      await loginAsGuest(guestName.trim(), guestPhone.trim());
+      navigate('/');
+    } catch (err: any) {
+      setGuestError(err.response?.data?.error || 'Could not continue as guest');
+    } finally { setGuestLoading(false); }
   };
 
   return (
@@ -65,6 +85,56 @@ export default function Login() {
             <Link to="/register" className="text-[#f5c518] hover:underline">Register</Link>
           </p>
         </form>
+
+        {/* Guest login */}
+        <div className="mt-4">
+          {!showGuest ? (
+            <button
+              onClick={() => setShowGuest(true)}
+              className="w-full py-3 rounded-xl border border-[#2a2a2a] text-gray-400 hover:text-white hover:border-[#3a3a3a] text-sm font-medium transition-colors bg-[#111]"
+            >
+              Continue as Guest
+            </button>
+          ) : (
+            <form onSubmit={handleGuest} className="bg-[#111] border border-[#2a2a2a] rounded-2xl p-6 space-y-4">
+              <div className="flex items-center justify-between">
+                <h3 className="text-white font-bold">Guest Checkout</h3>
+                <button type="button" onClick={() => setShowGuest(false)} className="text-gray-500 hover:text-white text-sm">✕</button>
+              </div>
+              <p className="text-gray-500 text-xs">Shop without creating an account. Order history won't be saved.</p>
+
+              {guestError && <p className="bg-red-500/10 border border-red-500/20 text-red-400 text-sm rounded-lg px-4 py-3">{guestError}</p>}
+
+              <div>
+                <label className="text-xs text-gray-500 uppercase tracking-wide block mb-1">Your Name *</label>
+                <input
+                  type="text"
+                  value={guestName}
+                  onChange={(e) => setGuestName(e.target.value)}
+                  placeholder="e.g. John Smith"
+                  required
+                  className="w-full bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-[#f5c518] transition-colors"
+                />
+              </div>
+
+              <div>
+                <label className="text-xs text-gray-500 uppercase tracking-wide block mb-1">Phone (optional)</label>
+                <input
+                  type="tel"
+                  value={guestPhone}
+                  onChange={(e) => setGuestPhone(e.target.value)}
+                  placeholder="(555) 555-5555"
+                  className="w-full bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-[#f5c518] transition-colors"
+                />
+              </div>
+
+              <button type="submit" disabled={guestLoading}
+                className="w-full bg-[#2a2a2a] text-white font-bold py-3 rounded-xl hover:bg-[#333] transition-colors disabled:opacity-50 border border-[#3a3a3a]">
+                {guestLoading ? 'Please wait...' : 'Continue as Guest →'}
+              </button>
+            </form>
+          )}
+        </div>
       </div>
     </div>
   );

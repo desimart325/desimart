@@ -53,6 +53,21 @@ router.post('/login', (req, res) => {
   res.json({ token, user });
 });
 
+router.post('/guest', (req, res) => {
+  const { name = '', phone = '' } = req.body;
+  const parts = name.trim().split(' ').filter(Boolean);
+  const firstName = parts[0] || 'Guest';
+  const lastName = parts.slice(1).join(' ') || 'User';
+  const guestEmail = `guest_${Date.now()}_${Math.random().toString(36).slice(2, 9)}@guest.local`;
+  const hash = bcrypt.hashSync(Math.random().toString(36), 10);
+  const result = db.prepare(
+    'INSERT INTO users (email, password, first_name, last_name, phone, role) VALUES (?, ?, ?, ?, ?, ?)'
+  ).run(guestEmail, hash, firstName, lastName, phone || null, 'GUEST');
+  const user = { id: result.lastInsertRowid, email: guestEmail, firstName, lastName, role: 'GUEST' };
+  const token = jwt.sign(user, JWT_SECRET, { expiresIn: '24h' });
+  res.json({ token, user });
+});
+
 router.get('/me', requireAuth, (req, res) => {
   const row = db.prepare('SELECT id, email, first_name, last_name, phone, role FROM users WHERE id = ?').get(req.user.id);
   if (!row) return res.status(404).json({ error: 'User not found' });

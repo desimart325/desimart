@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock } from 'lucide-react';
+import { MapPin, Phone, Clock, Mail } from 'lucide-react';
 
 const InstagramIcon = () => (
   <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -50,6 +50,21 @@ export default function Contact() {
                   (248) 254-3258
                 </a>
                 <p className="text-gray-500 text-xs mt-1">Call us anytime during store hours</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-[#111] border border-[#2a2a2a] rounded-2xl p-6">
+            <div className="flex items-start gap-4">
+              <div className="bg-[#f5c518]/10 p-3 rounded-xl text-[#f5c518]">
+                <Mail size={24} />
+              </div>
+              <div>
+                <h3 className="text-white font-bold mb-1">Email</h3>
+                <a href="mailto:desimart325@gmail.com" className="text-[#f5c518] hover:underline text-sm font-medium">
+                  desimart325@gmail.com
+                </a>
+                <p className="text-gray-500 text-xs mt-1">We'll respond within 24 hours</p>
               </div>
             </div>
           </div>
