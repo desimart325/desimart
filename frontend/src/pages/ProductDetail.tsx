@@ -64,7 +64,6 @@ export default function ProductDetail() {
   // Active display values come from the selected variant (or the product itself if none)
   const activePrice  = selectedVariant?.price  ?? product.price;
   const activeStock  = selectedVariant?.stock  ?? product.stock;
-  const activeSlug   = selectedVariant?.slug   ?? product.slug;
   const activeImage  = selectedVariant?.image_url ?? product.image_url;
 
   const brandLogo = getBrandLogo(product.name);
