@@ -40,6 +40,8 @@ db.exec(`
     image_url TEXT,
     is_active INTEGER NOT NULL DEFAULT 1,
     is_featured INTEGER NOT NULL DEFAULT 0,
+    group_key TEXT,
+    size_label TEXT,
     created_at TEXT NOT NULL DEFAULT (datetime('now'))
   );
 
@@ -64,6 +66,9 @@ db.exec(`
     status TEXT NOT NULL DEFAULT 'PENDING',
     total_amount REAL NOT NULL,
     shipping_address TEXT NOT NULL,
+    payment_method TEXT NOT NULL DEFAULT 'cash',
+    payment_id TEXT,
+    payment_status TEXT NOT NULL DEFAULT 'pending',
     created_at TEXT NOT NULL DEFAULT (datetime('now'))
   );
 
@@ -76,6 +81,16 @@ db.exec(`
     unit_price REAL NOT NULL
   );
 `);
+
+// ── Safe migrations (add columns to existing DBs if missing) ─────────────────
+const productCols = db.prepare("PRAGMA table_info(products)").all().map(c => c.name);
+if (!productCols.includes('group_key'))   db.prepare("ALTER TABLE products ADD COLUMN group_key TEXT").run();
+if (!productCols.includes('size_label'))  db.prepare("ALTER TABLE products ADD COLUMN size_label TEXT").run();
+
+const orderCols = db.prepare("PRAGMA table_info(orders)").all().map(c => c.name);
+if (!orderCols.includes('payment_method'))  db.prepare("ALTER TABLE orders ADD COLUMN payment_method TEXT NOT NULL DEFAULT 'cash'").run();
+if (!orderCols.includes('payment_id'))      db.prepare("ALTER TABLE orders ADD COLUMN payment_id TEXT").run();
+if (!orderCols.includes('payment_status'))  db.prepare("ALTER TABLE orders ADD COLUMN payment_status TEXT NOT NULL DEFAULT 'pending'").run();
 
 // Seed categories
 const catCount = db.prepare('SELECT COUNT(*) as c FROM categories').get().c;
