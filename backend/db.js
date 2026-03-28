@@ -255,4 +255,16 @@ if (prodCount === 0) {
   console.log(`Seeded ${seeded} products from CSV`);
 }
 
+// ── Apply fresh-produce images (runs every boot, only fills NULL slots) ───────
+const produceImages = JSON.parse(fs.readFileSync(path.join(__dirname, 'data/produce-images.json'), 'utf8'));
+const patchImg = db.prepare(
+  "UPDATE products SET image_url = ? WHERE category_slug = 'fresh-produce' AND LOWER(name) LIKE ? AND (image_url IS NULL OR image_url = '')"
+);
+let imgPatched = 0;
+for (const { match, url } of produceImages) {
+  const info = patchImg.run(url, match);
+  imgPatched += info.changes;
+}
+if (imgPatched > 0) console.log(`Patched ${imgPatched} fresh-produce images`);
+
 module.exports = db;
