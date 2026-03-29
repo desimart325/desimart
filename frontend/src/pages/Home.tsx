@@ -60,7 +60,7 @@ export default function Home() {
       <section className="border-b border-[#2a2a2a] bg-[#111]">
         <div className="max-w-7xl mx-auto px-4 py-6 grid grid-cols-3 gap-4">
           {[
-            { icon: <Truck size={20} />, label: 'Free Delivery', sub: 'On orders over $25' },
+            { icon: <Truck size={20} />, label: 'Free Delivery', sub: 'Within 5 miles of store' },
             { icon: <Shield size={20} />, label: '100% Authentic', sub: 'Quality guaranteed' },
             { icon: <Zap size={20} />, label: 'Fresh Stock', sub: 'Restocked daily' },
           ].map((f) => (
