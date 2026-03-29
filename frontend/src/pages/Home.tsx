@@ -5,16 +5,33 @@ import type { Category, Product } from '../lib/types';
 import ProductCard from '../components/product/ProductCard';
 import { ArrowRight, Zap, Shield, Truck } from 'lucide-react';
 
+const CATEGORY_IMG: Record<string, string> = {
+  'fresh-produce':       '/categories/fresh-produce.jpg',
+  'spices-masalas':      '/categories/spices-masalas.jpg',
+  'lentils-dal':         '/categories/lentils-dal.png',
+  'rice-grains':         '/categories/rice-grains.jpg',
+  'flour-atta':          '/categories/flour-atta.jpg',
+  'snacks-namkeen':      '/categories/snacks-namkeen.jpg',
+  'pickles-chutneys':    '/categories/pickles-chutneys.jpg',
+  'oils-ghee':           '/categories/oils-ghee.jpg',
+  'tea-coffee':          '/categories/tea-coffee.jpg',
+  'beverages':           '/categories/beverages.jpg',
+  'sweets-mithai':       '/categories/sweets-mithai.jpg',
+  'frozen-foods':        '/categories/frozen-foods.jpg',
+  'hot-foods':           '/categories/hot-foods.jpg',
+  'dairy':               '/categories/dairy.jpg',
+  'instant-mixes':       '/categories/instant-mixes.jpg',
+  'ready-to-eat':        '/categories/ready-to-eat.jpg',
+  'biscuits-cookies':    '/categories/biscuits-cookies.jpg',
+  'noodles-vermicelli':  '/categories/noodles-vermicelli.jpg',
+  'breads-rotis':        '/categories/breads-rotis.jpg',
+  'nuts-seeds':          '/categories/nuts-seeds.jpg',
+  'paste-concentrate':   '/categories/paste-concentrate.jpg',
+  'digestive-refreshers':'/categories/digestive-refreshers.jpg',
+};
 const CATEGORY_EMOJI: Record<string, string> = {
-  'fresh-produce': '🥦', 'spices-masalas': '🌶️', 'lentils-dal': '🫘',
-  'rice-grains': '🌾', 'flour-atta': '🫓', 'snacks-namkeen': '🍿',
-  'pickles-chutneys': '🫙', 'oils-ghee': '🫒', 'tea-coffee': '☕',
-  'beverages': '🥤', 'sweets-mithai': '🍮', 'frozen-foods': '❄️',
-  'hot-foods': '🔥', 'dairy': '🥛', 'instant-mixes': '📦',
-  'ready-to-eat': '🍱', 'biscuits-cookies': '🍪', 'noodles-vermicelli': '🍜',
-  'breads-rotis': '🫓', 'nuts-seeds': '🥜', 'paste-concentrate': '🥫',
   'baking': '🧁', 'chocolates': '🍫', 'salt-sugar': '🧂',
-  'digestive-refreshers': '🫖', 'personal-care': '🧴', 'misc': '🛒',
+  'personal-care': '🧴', 'misc': '🛒',
 };
 
 export default function Home() {
@@ -60,7 +77,7 @@ export default function Home() {
       <section className="border-b border-[#2a2a2a] bg-[#111]">
         <div className="max-w-7xl mx-auto px-4 py-6 grid grid-cols-3 gap-4">
           {[
-            { icon: <Truck size={20} />, label: 'Free Delivery', sub: 'Within 5 miles of store' },
+            { icon: <Truck size={20} />, label: 'Free Delivery', sub: 'Orders $25+ within 5 miles' },
             { icon: <Shield size={20} />, label: '100% Authentic', sub: 'Quality guaranteed' },
             { icon: <Zap size={20} />, label: 'Fresh Stock', sub: 'Restocked daily' },
           ].map((f) => (
@@ -84,17 +101,24 @@ export default function Home() {
           </Link>
         </div>
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
-          {cats?.map((cat) => (
-            <Link key={cat.slug} to={`/products?category=${cat.slug}`}
-              className="bg-[#111] border border-[#2a2a2a] rounded-2xl p-4 flex flex-col items-center gap-2 hover:border-[#f5c518]/50 hover:bg-[#1a1a1a] transition-all group">
-              <span className="text-3xl group-hover:scale-110 transition-transform">
-                {CATEGORY_EMOJI[cat.slug] || '🛒'}
-              </span>
-              <span className="text-xs text-gray-400 text-center leading-tight group-hover:text-white transition-colors">
-                {cat.name}
-              </span>
-            </Link>
-          ))}
+          {cats?.map((cat) => {
+            const img = CATEGORY_IMG[cat.slug];
+            const emoji = CATEGORY_EMOJI[cat.slug] || '🛒';
+            return (
+              <Link key={cat.slug} to={`/products?category=${cat.slug}`}
+                className="bg-[#111] border border-[#2a2a2a] rounded-2xl overflow-hidden flex flex-col items-center hover:border-[#f5c518]/50 transition-all group">
+                <div className="w-full aspect-square overflow-hidden bg-[#1a1a1a]">
+                  {img
+                    ? <img src={img} alt={cat.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                    : <div className="w-full h-full flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">{emoji}</div>
+                  }
+                </div>
+                <span className="text-xs text-gray-400 text-center leading-tight group-hover:text-white transition-colors px-2 py-2">
+                  {cat.name}
+                </span>
+              </Link>
+            );
+          })}
         </div>
       </section>
 

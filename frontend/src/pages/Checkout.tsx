@@ -270,8 +270,10 @@ export default function Checkout() {
     return () => { if (deliveryTimer.current) clearTimeout(deliveryTimer.current); };
   }, [address.street, address.city, address.state, address.zipCode, addressValid]);
 
-  const deliveryFee = delivery?.deliveryFee ?? 4.99;
-  const grandTotal = total() + deliveryFee;
+  const cartTotal = total();
+  const qualifiesForFree = delivery?.withinRadius && cartTotal >= 25;
+  const deliveryFee = delivery ? (qualifiesForFree ? 0 : 4.99) : 4.99;
+  const grandTotal = cartTotal + deliveryFee;
 
   const onSuccess = (orderNumber: string) => { setSuccess(orderNumber); clearCart(); };
 
@@ -347,7 +349,13 @@ export default function Checkout() {
                   <span className="text-gray-500 flex items-center gap-1"><Loader2 size={11} className="animate-spin" /> Checking delivery range…</span>
                 ) : delivery?.geocoded ? (
                   delivery.withinRadius ? (
-                    <span className="text-green-400">Within {delivery.distance} mi of store — <strong>free delivery!</strong></span>
+                    <span className={qualifiesForFree ? 'text-green-400' : 'text-yellow-400'}>
+                      Within {delivery.distance} mi of store —{' '}
+                      {qualifiesForFree
+                        ? <strong>free delivery!</strong>
+                        : <span>add ${(25 - cartTotal).toFixed(2)} more for free delivery</span>
+                      }
+                    </span>
                   ) : (
                     <span className="text-gray-400">{delivery.distance} mi from store — $4.99 delivery fee</span>
                   )
@@ -471,8 +479,8 @@ export default function Checkout() {
                   </span>
                 )}
               </div>
-              {delivery?.geocoded && delivery.withinRadius && (
-                <p className="text-xs text-green-400/70 text-right">Within 5 mi of store</p>
+              {delivery?.geocoded && delivery.withinRadius && !qualifiesForFree && (
+                <p className="text-xs text-yellow-400/70 text-right">Add ${(25 - cartTotal).toFixed(2)} more for free delivery</p>
               )}
               {delivery?.geocoded && !delivery.withinRadius && (
                 <p className="text-xs text-gray-600 text-right">{delivery.distance} mi from store</p>
