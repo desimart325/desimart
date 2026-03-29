@@ -5,7 +5,7 @@
 # Proxy /api calls to the Render backend
 [[redirects]]
   from   = "/api/*"
-  to     = "https://desimart-3pye.onrender.com/api/:splat"
+  to     = "https://dominant-darell-desimart-ad8ea85a.koyeb.app/api/:splat"
   status = 200
   force  = true
 
